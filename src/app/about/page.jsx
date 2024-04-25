@@ -6,7 +6,6 @@ import { useRef } from "react";
 
 function AboutPage() {
   const containerRef = useRef();
-  // const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
@@ -28,13 +27,13 @@ function AboutPage() {
           <div className="flex flex-col gap-10 justify-center">
             <h1 className="font-bold text-3xl">Biography</h1>
             <p className="text-justify text-lg leading-10">
-              <span> &nbsp; &nbsp; &nbsp;</span> Hello! I am{" "}
+              <span> &nbsp; &nbsp; &nbsp;</span> Hello! I am {}
               <span className="uppercase font-bold ">Illahibux</span>, a web
               developer with one year of experience residing in Karachi. I
               specialize in creating stunning websites with advanced
               functionality using Next.js and TypeScript. With my expertise, I
               craft captivating online experiences that stand out. Explore my
-              portfolio to see my work!"
+              portfolio to see my work!
             </p>
             <span className="italic">
               This is the useful Qutation by a famous person
